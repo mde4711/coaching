@@ -2,7 +2,8 @@
 (
 	[TheTableId] BIGINT NOT NULL IDENTITY(1,1),
 	[TheColumn]  NVARCHAR(100) NOT NULL,
-	CONSTRAINT [PK_TheTable] PRIMARY KEY ([TheTableId])
+	[SecondColumn] NVARCHAR(50) NULL, 
+    CONSTRAINT [PK_TheTable] PRIMARY KEY ([TheTableId])
 )
 GO
 
